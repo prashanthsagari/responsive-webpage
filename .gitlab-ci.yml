@@ -15,7 +15,7 @@ sonarqube-check:
     - ENV_PROD
     - TLS_SUPPORTED
   script:
-    - sonar-scanner -Dsonar.projectKey=$GITLAB_USER_ID:$CI_PROJECT_NAMESPACE:$CI_PROJECT_NAME -Dsonar.analysis.userId=$GITLAB_USER_ID -Dsonar.analysis.userEmail=$GITLAB_USER_EMAIL -Dsonar.projectName=$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME -Dsonar.analysis.server=$CI_SERVER_HOST
+    - sonar-scanner -Dsonar.projectKey=$GITLAB_USER_ID:$CI_PROJECT_NAMESPACE:$CI_PROJECT_NAME -Dsonar.analysis.userId=$GITLAB_USER_ID -Dsonar.analysis.userEmail=$GITLAB_USER_EMAIL -Dsonar.projectName=$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME -Dsonar.analysis.server=$CI_SERVER_HOST -Dsonar.branch.name=$CI_COMMIT_BRANCH
   allow_failure: true
   rules:
     - if: $CI_COMMIT_BRANCH == 'master'
