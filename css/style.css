@@ -3,12 +3,10 @@ body, div {
   font-size: 16px;
 }
 
-.no-link {
+.noLine {
   text-decoration: none;
   color: white;
 }
-
-
 
 footer {
   background-color: rgb(0, 0, 0);
@@ -16,49 +14,48 @@ footer {
   position: static;
   /* margin-top: auto; */
   width: 100%;
-  
-}
-.footer-text {
   color: white;
   text-align: center;
+  
 }
+
 
 .cardAlignment {
   margin-right: 20px;
 }
 
-.tales {
+.carousel-alignment {
   width: 80%;
   height: 30vh;
 }
 
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
-  .tales {
+  .carousel-alignment {
     height: 40vh;
   }
 }
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  .tales {
+  .carousel-alignment {
     height: 20vh;
   }
 }
 
-/* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {}
+/* All Mobile Sizes (devices and browser)
+@media only screen and (max-width: 767px) {} */
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .tales {
+  .carousel-alignment {
     height: 50vh;
   }
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
-  .tales {
+  .carousel-alignment {
     height: 50vh;
   }
 }
